@@ -11,7 +11,7 @@
           templateProvider: function($templateCache) {
             return $templateCache.get('main/main.html');
           }
-        })
+        });
     })
     .controller('MainCtrl', function ($scope) {
       $scope.awesomeThings = [
