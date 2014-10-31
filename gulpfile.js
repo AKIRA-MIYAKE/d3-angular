@@ -27,7 +27,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./app/css-temp'));
 });
 
-gulp.task('css', ['sass'], function(){
+gulp.task('css', /*['sass'],*/ function(){
     return gulp.src('./app/**/*.css')
         .pipe(plugins.concat('app.css'))
         .pipe(gulp.dest('./build'));
